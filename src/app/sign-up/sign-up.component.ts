@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-up',
@@ -18,6 +19,8 @@ export class SignUpComponent {
   password=""
   ConfirmPassword=""
 
+  
+
   readValues=() =>
   {
     let data:any=
@@ -35,6 +38,8 @@ export class SignUpComponent {
     }
 
     console.log(data)
+
+    
   }
 
 
