@@ -1,5 +1,5 @@
-<app-nav-bar></app-nav-bar>
-
+<app-admin-page></app-admin-page>
+<h1>Book Entry</h1>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -7,40 +7,40 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="label-control">Book title</label>
-                    <input name="title" [(ngModel)]="title" type="text" class="form-control">
+                    <input name="bookName" [(ngModel)]="bookName" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="label-control">Author</label>
                     <input name="author" [(ngModel)]="author" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="label-control">Description</label>
-                    <input name="description" [(ngModel)]="description" type="text" class="form-control">
+                    <label for="" class="label-control">publisher Name</label>
+                    <input name="publisherName" [(ngModel)]="publisherName" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="label-control">Publisher</label>
-                    <input name="publisher" [(ngModel)]="publisher" type="text" class="form-control">
+                    <label for="" class="label-control">genre</label>
+                    <input name="genre" [(ngModel)]="genre" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="label-control">Language</label>
-                    <input name="language" [(ngModel)]="language" type="text" class="form-control">
+                    <label for="" class="label-control">total Pages</label>
+                    <input name="totalPages" [(ngModel)]="totalPages" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="label-control">Distributor</label>
-                    <input name="distributor" [(ngModel)]="distributor" type="text" class="form-control">
+                    <label for="" class="label-control">price</label>
+                    <input name="price" [(ngModel)]="price" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="label-control">Release year</label>
-                    <input name="releaseYear" [(ngModel)]="releaseYear" type="text" class="form-control">
+                    <input name="yearOfPublish" [(ngModel)]="yearOfPublish" type="text" class="form-control">
                 </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <!-- <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="label-control">Price</label>
                     <input name="price" [(ngModel)]="price" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="label-control">Book image upload</label>
                     <input name="image" [(ngModel)]="image" type="file" name="" id="" class="form-control">
-                </div>
+                </div> -->
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <button (click)="readValues()" class="btn btn-success">Add</button>
                 </div>

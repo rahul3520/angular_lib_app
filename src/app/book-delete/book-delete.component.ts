@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-book-delete',
@@ -7,16 +8,38 @@ import { Component } from '@angular/core';
 })
 export class BookDeleteComponent {
 
-  title=""
+  bookName=""
+
+  constructor(private api:ApiService){}
 
   readValues=() =>
   {
     let data:any=
     {
-      "title":this.title
+      "bookName":this.bookName
     }
 
     console.log(data)
+
+    this.api.BookDelete(data).subscribe(
+
+      (response:any)=>
+      {
+        if(response.status=="success")
+        {
+          alert("book deleted successfuly!")
+        }
+        else
+        {
+          alert("Invalid book name")
+        }
+
+      }
+
+
+    )
+
+
   
   
   }

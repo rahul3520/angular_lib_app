@@ -7,14 +7,14 @@ import { Component } from '@angular/core';
 })
 export class EditBookComponent {
 
-  title=""
+  bookName=""
 
 
   readValues=() =>
   {
     let data:any=
     {
-      "title":this.title
+      "bookNme":this.bookName
     }
 
     console.log(data)

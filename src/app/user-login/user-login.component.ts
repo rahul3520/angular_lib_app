@@ -25,7 +25,7 @@ export class UserLoginComponent {
 
     if(data.username=="user" && data.password=="123")
     {
-      this.route.navigate(["/viewbooks"])
+      this.route.navigate(["/userpage"])
     }
     else
     {

@@ -1,5 +1,5 @@
-<app-nav-bar></app-nav-bar>
-
+<app-admin-page></app-admin-page>
+<h1>Book Issue</h1>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -7,9 +7,9 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="label-control">Name</label>
-                    <input name="Name" [(ngModel)]="Name" type="text" class="form-control">
+                    <input name="bookName" [(ngModel)]="bookName" type="text" class="form-control">
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <!-- <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="label-control">Book title</label>
                     <input name="title" [(ngModel)]="title" type="text" class="form-control">
                 </div>
@@ -20,10 +20,42 @@
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="label-control">Membership no</label>
                     <input name="MembershipNo" [(ngModel)]="MembershipNo" type="text" class="form-control">
-                </div>
+                </div> -->
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <button (click)="readValues()" class="btn btn-success">Submit</button>
                 </div>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" *ngFor="let i of searchData">
+                    
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>bookName</th>
+                                <th>author</th>
+                                <th>publisherName</th>
+                                <th>genre</th>
+                                <th>totalPages</th>
+                                <th>price</th>
+                                <th>yearOfPublish</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>{{i.bookName}}</td>
+                                <td>{{i.author}}</td>
+                                <td>{{i.publisherName}}</td>
+                                <td>{{i.genre}}</td>
+                                <td>{{i.totalPages}}</td>
+                                <td>{{i.price}}</td>
+                                <td>{{i.yearOfPublish}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+
             </div>
         </div>
     </div>

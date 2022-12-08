@@ -27,8 +27,8 @@ export class AdminLoginComponent {
 
     if (data.username=="admin" && data.password == "12345") {
 
-      // alert("valid login")
-      this.route.navigate(["/viewbooks"])
+      alert("valid login")
+      this.route.navigate(["/adminpage"])
       
     } else {
 

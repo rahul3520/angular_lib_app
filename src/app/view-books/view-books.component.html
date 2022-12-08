@@ -1,5 +1,5 @@
-<app-nav-bar></app-nav-bar>
-
+<app-user-page></app-user-page>
+<h1>View Books</h1>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -7,10 +7,10 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of books">
                     <div class="card" >
-                        <img height=300px src= {{i.image}} class="card-img-top" alt="...">
+                        <img height=300px src= "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/book-cover-flyer-template-6bd8f9188465e443a5e161a7d0b3cf33_screen.jpg?ts=1456287935" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text">Title: {{i.title}}</p>
-                            <p class="card-text">{{i.description}}</p>
+                            <p class="card-text">Title: {{i.bookName}}</p>
+                            <p class="card-text">Author: {{i.author}}</p>
                             <p class="card-text">Price: {{i.price}} /-</p>
 
                         </div>

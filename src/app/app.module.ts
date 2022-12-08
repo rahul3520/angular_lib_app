@@ -16,6 +16,10 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
+import { HttpClientModule } from '@angular/common/http';
+import { AdminPageComponent } from './admin-page/admin-page.component';
+import { UserPageComponent } from './user-page/user-page.component'
+
 const myRoute:Routes=[
   {
     path:"",
@@ -52,6 +56,14 @@ const myRoute:Routes=[
   {
     path:"editbook",
     component:EditBookComponent
+  },
+  {
+    path:"adminpage",
+    component:AdminPageComponent
+  },
+  {
+    path:"userpage",
+    component:UserPageComponent
   }
   
 ]
@@ -69,13 +81,16 @@ const myRoute:Routes=[
     BookDeleteComponent,
     EditBookComponent,
     NavBarComponent,
+    AdminPageComponent,
+    UserPageComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoute),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
